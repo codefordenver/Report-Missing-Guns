@@ -4,7 +4,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<GridPane hgap="2.0" maxWidth="-Infinity" prefHeight="1500.0" prefWidth="450.0" vgap="2.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.reportmissingguns.HelloController">
+<GridPane hgap="2.0" maxWidth="-Infinity" prefHeight="1500.0" prefWidth="450.0" vgap="2.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example._218scenebuilder.HelloController">
 
 
 
@@ -43,8 +43,8 @@
     <TextField GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="28" />
     <Label text="Gun Model" GridPane.rowIndex="31" />
     <TextField promptText="Gun Serial Number" GridPane.columnSpan="4" GridPane.rowIndex="32" />
-    <DatePicker fx:id="dataPicker_date_missing" promptText="Date missing" GridPane.rowIndex="33" />
-<!--    <TextField fx:id="textField_time_missing" promptText="Time gone" GridPane.rowIndex="33" GridPane.columnIndex="2"/>-->
+    <DatePicker fx:id="datePicker_date_missing" promptText="Date missing" GridPane.rowIndex="33" />
+    <!--    <TextField fx:id="textField_time_missing" promptText="Time gone" GridPane.rowIndex="33" GridPane.columnIndex="2"/>-->
     <RadioButton fx:id="radioButton_lost" mnemonicParsing="false" text="Lost" GridPane.columnIndex="2" GridPane.rowIndex="33" />
     <RadioButton fx:id="radioButton_stolen" mnemonicParsing="false" text="Stolen" GridPane.columnIndex="3" GridPane.rowIndex="33" />
     <TextField promptText="Identifying marks/engravings" GridPane.columnIndex="0" GridPane.columnSpan="4" GridPane.rowIndex="34" />
@@ -74,7 +74,7 @@
     <Label text="Zipcode" GridPane.columnIndex="3" GridPane.rowIndex="48" />
     <TextField fx:id="textField_incident_time" promptText="incident time" GridPane.columnIndex="1" GridPane.rowIndex="33"/>
 
-    <Button  onAction="#onSubmitClick" mnemonicParsing="false" text="Submit" GridPane.columnIndex="3" GridPane.rowIndex="21" />
+    <Button onAction="#onSubmitClick" mnemonicParsing="false" text="Submit" GridPane.columnIndex="3" GridPane.rowIndex="21" />
 
 
     <columnConstraints>
@@ -87,7 +87,7 @@
         <ColumnConstraints />
         <ColumnConstraints />
         <ColumnConstraints />
-      <ColumnConstraints />
+        <ColumnConstraints />
     </columnConstraints>
     <rowConstraints>
         <RowConstraints />
@@ -133,7 +133,7 @@
         <RowConstraints />
         <RowConstraints />
         <RowConstraints />
-      <RowConstraints />
+        <RowConstraints />
     </rowConstraints>
 
 
