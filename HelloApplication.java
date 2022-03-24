@@ -21,6 +21,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.lang.StringBuilder;
 
+import javafx.geometry.Orientation;
+
 
 // Credit to: https://stackoverflow.com/questions/40231858/what-is-rule-to-use-scrollbar-in-javafx
 
@@ -29,16 +31,18 @@ public class HelloApplication extends Application {
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
 
-//        ScrollBar scroll = new ScrollBar();
-//        scroll.setMin(0);
-//        scroll.setMax(400);
-//        scroll.setValue(50); // Where it starts
-//        scroll.setLayoutX(180);
-//        scroll.setLayoutY(75);
-//
-//        Group root = new Group(scroll);
+        //ScrollBar scroll = new ScrollBar();
+        //scroll.setOrientation(Orientation.VERTICAL);
+        //scroll.setMin(0);
+        //scroll.setMax(400);
+        //scroll.setValue(50); // Where it starts
+        //scroll.setLayoutX(180);
+        //scroll.setLayoutY(75);
+
+        // Group root = new Group(fxmlLoader.load());
 
         Scene scene = new Scene(fxmlLoader.load(), 320, 240);
+        //Scene scene = new Scene(root, 320, 240);
         stage.setTitle("Hello!");
 
 
