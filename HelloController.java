@@ -38,7 +38,12 @@ import java.util.Calendar;
 import java.util.ArrayList;
 import java.util.List;
 
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
+
 public class HelloController {
+    @FXML
+    public ScrollBar scroll;
     @FXML
     public Label welcomeText;
     @FXML
@@ -79,6 +84,17 @@ public class HelloController {
     public TextField textField_incident_zipcode;
     @FXML
     public TextArea textArea_incident_addl_description;
+
+    public void initialize() {
+        scroll.valueProperty().addListener(new ChangeListener<Number>() {
+            @Override
+            public void changed(ObservableValue<? extends Number> value, Number oldValue, Number newValue) {
+                welcomeText.setLayoutY(newValue.doubleValue());
+            }
+        });
+    }
+
+
 
     String[] fieldValues = new String[14];
     @FXML
