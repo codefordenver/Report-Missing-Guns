@@ -7,79 +7,76 @@
 <GridPane hgap="2.0" maxWidth="-Infinity" prefHeight="1500.0" prefWidth="450.0" vgap="2.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example._218scenebuilder.HelloController">
 
     <children>
-        <ScrollBar fx:id="bar" min="0" max="400" GridPane.rowIndex="0" GridPane.columnIndex="5" orientation="VERTICAL" />
 
-        <AnchorPane fx:id="sectionToScroll">
+        <ScrollBar fx:id="scroll" min="0" max="400" GridPane.rowIndex="0" GridPane.columnIndex="5" orientation="VERTICAL" />
 
-            <Label fx:id="welcomeText" text="Thank you for reporting a missing firearm.  Doing so both helps to prevent it from being used in a crime and helps improve the likelihood of you getting it back" wrapText="true" GridPane.columnSpan="3" GridPane.rowIndex="2" />
-            <Label style="-fx-font: Times New Roman bold;" text="Reporting a Lost or Stolen Firearm" GridPane.columnSpan="4" />
-            <Label text="Your information" GridPane.rowIndex="3" />
-            <TextField fx:id="textField_first_middle" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <TextField fx:id="textField_last_name" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-            <Label text="First (&amp;Middle)" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-            <Label text="Last Name" GridPane.columnIndex="2" GridPane.rowIndex="5" />
-            <Label text="DOB MM/DD/YYYY" GridPane.columnIndex="3" GridPane.rowIndex="5" />
-            <DatePicker fx:id="datePicker_DOB" GridPane.columnIndex="3" GridPane.rowIndex="3" />
-            <TextField fx:id="textField_address_line1" GridPane.columnSpan="4" GridPane.rowIndex="7" />
-            <Label text="Address Line 1" GridPane.columnSpan="3" GridPane.rowIndex="8" />
-            <TextField fx:id="textField_address_line2" GridPane.columnSpan="4" GridPane.rowIndex="9" />
-            <Label text="Address Line 2" GridPane.columnSpan="4" GridPane.rowIndex="10" />
-            <TextField fx:id="textField_city" GridPane.columnSpan="2" GridPane.rowIndex="11" />
-            <TextField fx:id="textField_state" GridPane.columnIndex="2" GridPane.rowIndex="11" />
-            <TextField fx:id="textField_zipcode" GridPane.columnIndex="3" GridPane.rowIndex="11" />
-            <Label text="City" GridPane.columnSpan="2" GridPane.rowIndex="12" />
-            <Label text="State" GridPane.columnIndex="2" GridPane.rowIndex="12" />
-            <Label text="Zipcode" GridPane.columnIndex="3" GridPane.rowIndex="12" />
-            <TextField GridPane.columnSpan="2" GridPane.rowIndex="17" />
-            <TextField fx:id="textField_email" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="17" />
-            <Label text="Phone Number" GridPane.rowIndex="19" />
-            <Label text="Email" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="19" />
-            <ChoiceBox prefWidth="150.0" GridPane.columnSpan="2" GridPane.rowIndex="21" />
-            <Label text="Best way to Reach You" GridPane.columnSpan="2" GridPane.rowIndex="22" />
-            <Separator prefWidth="200.0" GridPane.columnSpan="4" GridPane.rowIndex="23" />
-            <ChoiceBox prefWidth="150.0" GridPane.rowIndex="26" />
-            <Label text="if other----&gt;" GridPane.columnIndex="1" GridPane.rowIndex="26" />
-            <TextField GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="26" />
-            <Label text="Gun Manufacturer" GridPane.rowIndex="27" />
-            <ChoiceBox prefWidth="150.0" GridPane.rowIndex="28" />
-            <Label text="if other----&gt;" GridPane.columnIndex="1" GridPane.rowIndex="28" />
-            <TextField GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="28" />
-            <Label text="Gun Model" GridPane.rowIndex="31" />
-            <TextField promptText="Gun Serial Number" GridPane.columnSpan="4" GridPane.rowIndex="32" />
-            <DatePicker fx:id="datePicker_date_missing" promptText="Date missing" GridPane.rowIndex="33" />
-            <!--    <TextField fx:id="textField_time_missing" promptText="Time gone" GridPane.rowIndex="33" GridPane.columnIndex="2"/>-->
-            <RadioButton fx:id="radioButton_lost" mnemonicParsing="false" text="Lost" GridPane.columnIndex="2" GridPane.rowIndex="33" />
-            <RadioButton fx:id="radioButton_stolen" mnemonicParsing="false" text="Stolen" GridPane.columnIndex="3" GridPane.rowIndex="33" />
-            <TextField promptText="Identifying marks/engravings" GridPane.columnIndex="0" GridPane.columnSpan="4" GridPane.rowIndex="34" />
-            <ChoiceBox prefWidth="150.0" GridPane.rowIndex="36" />
-            <Label text="if other----&gt;" GridPane.columnIndex="1" GridPane.rowIndex="36" />
-            <TextField GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="36" />
-            <Label text="Gun Color" GridPane.rowIndex="37" />
-            <ChoiceBox prefWidth="150.0" GridPane.rowIndex="38" />
-            <Label text="Magazine size" GridPane.rowIndex="39" />
-            <ChoiceBox prefWidth="150.0" GridPane.rowIndex="40" />
-            <Label text="if other----&gt;" GridPane.columnIndex="1" GridPane.rowIndex="40" />
-            <TextField GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="40" />
-            <Label text="Gun Classification" GridPane.rowIndex="41" />
-            <TextArea fx:id="textArea_incident_addl_description" promptText="Additional information on how the gun went missing, etc." GridPane.columnIndex="0" GridPane.columnSpan="4" GridPane.rowIndex="42">
-                <GridPane.margin>
-                    <Insets bottom="1.0" />
-                </GridPane.margin></TextArea>
-            <TextField fx:id="textField_incident_address_line1" GridPane.columnSpan="4" GridPane.rowIndex="43" />
-            <Label text="Incident Address Line 1" GridPane.columnSpan="3" GridPane.rowIndex="44" />
-            <TextField fx:id="textField_incident_address_line2" GridPane.columnSpan="4" GridPane.rowIndex="45" />
-            <Label text="Incident Address Line 2" GridPane.columnSpan="4" GridPane.rowIndex="46" />
-            <TextField fx:id="textField_incident_city" GridPane.columnSpan="2" GridPane.rowIndex="47" />
-            <TextField fx:id="textField_incident_state" GridPane.columnIndex="2" GridPane.rowIndex="47" />
-            <TextField fx:id="textField_incident_zipcode" GridPane.columnIndex="3" GridPane.rowIndex="47" />
-            <Label text="City" GridPane.columnSpan="2" GridPane.rowIndex="48" />
-            <Label text="State" GridPane.columnIndex="2" GridPane.rowIndex="48" />
-            <Label text="Zipcode" GridPane.columnIndex="3" GridPane.rowIndex="48" />
-            <TextField fx:id="textField_incident_time" promptText="incident time" GridPane.columnIndex="1" GridPane.rowIndex="33"/>
+        <Label fx:id="welcomeText" text="Thank you for reporting a missing firearm.  Doing so both helps to prevent it from being used in a crime and helps improve the likelihood of you getting it back" wrapText="true" GridPane.columnSpan="3" GridPane.rowIndex="2" />
+        <Label style="-fx-font: Times New Roman bold;" text="Reporting a Lost or Stolen Firearm" GridPane.columnSpan="4" />
+        <Label text="Your information" GridPane.rowIndex="3" />
+        <TextField fx:id="textField_first_middle" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+        <TextField fx:id="textField_last_name" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+        <Label text="First (&amp;Middle)" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+        <Label text="Last Name" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+        <Label text="DOB MM/DD/YYYY" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+        <DatePicker fx:id="datePicker_DOB" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+        <TextField fx:id="textField_address_line1" GridPane.columnSpan="4" GridPane.rowIndex="7" />
+        <Label text="Address Line 1" GridPane.columnSpan="3" GridPane.rowIndex="8" />
+        <TextField fx:id="textField_address_line2" GridPane.columnSpan="4" GridPane.rowIndex="9" />
+        <Label text="Address Line 2" GridPane.columnSpan="4" GridPane.rowIndex="10" />
+        <TextField fx:id="textField_city" GridPane.columnSpan="2" GridPane.rowIndex="11" />
+        <TextField fx:id="textField_state" GridPane.columnIndex="2" GridPane.rowIndex="11" />
+        <TextField fx:id="textField_zipcode" GridPane.columnIndex="3" GridPane.rowIndex="11" />
+        <Label text="City" GridPane.columnSpan="2" GridPane.rowIndex="12" />
+        <Label text="State" GridPane.columnIndex="2" GridPane.rowIndex="12" />
+        <Label text="Zipcode" GridPane.columnIndex="3" GridPane.rowIndex="12" />
+        <TextField GridPane.columnSpan="2" GridPane.rowIndex="17" />
+        <TextField fx:id="textField_email" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="17" />
+        <Label text="Phone Number" GridPane.rowIndex="19" />
+        <Label text="Email" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="19" />
+        <ChoiceBox prefWidth="150.0" GridPane.columnSpan="2" GridPane.rowIndex="21" />
+        <Label text="Best way to Reach You" GridPane.columnSpan="2" GridPane.rowIndex="22" />
+        <Separator prefWidth="200.0" GridPane.columnSpan="4" GridPane.rowIndex="23" />
+        <ChoiceBox prefWidth="150.0" GridPane.rowIndex="26" />
+        <Label text="if other----&gt;" GridPane.columnIndex="1" GridPane.rowIndex="26" />
+        <TextField GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="26" />
+        <Label text="Gun Manufacturer" GridPane.rowIndex="27" />
+        <ChoiceBox prefWidth="150.0" GridPane.rowIndex="28" />
+        <Label text="if other----&gt;" GridPane.columnIndex="1" GridPane.rowIndex="28" />
+        <TextField GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="28" />
+        <Label text="Gun Model" GridPane.rowIndex="31" />
+        <TextField promptText="Gun Serial Number" GridPane.columnSpan="4" GridPane.rowIndex="32" />
+        <DatePicker fx:id="datePicker_date_missing" promptText="Date missing" GridPane.rowIndex="33" />
+        <!--    <TextField fx:id="textField_time_missing" promptText="Time gone" GridPane.rowIndex="33" GridPane.columnIndex="2"/>-->
+        <RadioButton fx:id="radioButton_lost" mnemonicParsing="false" text="Lost" GridPane.columnIndex="2" GridPane.rowIndex="33" />
+        <RadioButton fx:id="radioButton_stolen" mnemonicParsing="false" text="Stolen" GridPane.columnIndex="3" GridPane.rowIndex="33" />
+        <TextField promptText="Identifying marks/engravings" GridPane.columnIndex="0" GridPane.columnSpan="4" GridPane.rowIndex="34" />
+        <ChoiceBox prefWidth="150.0" GridPane.rowIndex="36" />
+        <Label text="if other----&gt;" GridPane.columnIndex="1" GridPane.rowIndex="36" />
+        <TextField GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="36" />
+        <Label text="Gun Color" GridPane.rowIndex="37" />
+        <ChoiceBox prefWidth="150.0" GridPane.rowIndex="38" />
+        <Label text="Magazine size" GridPane.rowIndex="39" />
+        <ChoiceBox prefWidth="150.0" GridPane.rowIndex="40" />
+        <Label text="if other----&gt;" GridPane.columnIndex="1" GridPane.rowIndex="40" />
+        <TextField GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="40" />
+        <Label text="Gun Classification" GridPane.rowIndex="41" />
+        <TextArea fx:id="textArea_incident_addl_description" promptText="Additional information on how the gun went missing, etc." GridPane.columnIndex="0" GridPane.columnSpan="4" GridPane.rowIndex="42">
+            <GridPane.margin>
+                <Insets bottom="1.0" />
+            </GridPane.margin></TextArea>
+        <TextField fx:id="textField_incident_address_line1" GridPane.columnSpan="4" GridPane.rowIndex="43" />
+        <Label text="Incident Address Line 1" GridPane.columnSpan="3" GridPane.rowIndex="44" />
+        <TextField fx:id="textField_incident_address_line2" GridPane.columnSpan="4" GridPane.rowIndex="45" />
+        <Label text="Incident Address Line 2" GridPane.columnSpan="4" GridPane.rowIndex="46" />
+        <TextField fx:id="textField_incident_city" GridPane.columnSpan="2" GridPane.rowIndex="47" />
+        <TextField fx:id="textField_incident_state" GridPane.columnIndex="2" GridPane.rowIndex="47" />
+        <TextField fx:id="textField_incident_zipcode" GridPane.columnIndex="3" GridPane.rowIndex="47" />
+        <Label text="City" GridPane.columnSpan="2" GridPane.rowIndex="48" />
+        <Label text="State" GridPane.columnIndex="2" GridPane.rowIndex="48" />
+        <Label text="Zipcode" GridPane.columnIndex="3" GridPane.rowIndex="48" />
+        <TextField fx:id="textField_incident_time" promptText="incident time" GridPane.columnIndex="1" GridPane.rowIndex="33"/>
 
-            <Button onAction="#onSubmitClick" mnemonicParsing="false" text="Submit" GridPane.columnIndex="3" GridPane.rowIndex="21" />
-
-        </AnchorPane>
+        <Button onAction="#onSubmitClick" mnemonicParsing="false" text="Submit" GridPane.columnIndex="3" GridPane.rowIndex="21" />
 
     </children>
 

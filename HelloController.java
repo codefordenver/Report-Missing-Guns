@@ -22,7 +22,6 @@ create table if not exists incidents(
 
 package com.example._218scenebuilder;
 
-import javafx.beans.property.DoubleProperty;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 
@@ -42,11 +41,9 @@ import java.util.List;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 
-import javafx.scene.layout.AnchorPane;
-
 public class HelloController {
     @FXML
-    public ScrollBar bar;
+    public ScrollBar scroll;
     @FXML
     public Label welcomeText;
     @FXML
@@ -87,26 +84,12 @@ public class HelloController {
     public TextField textField_incident_zipcode;
     @FXML
     public TextArea textArea_incident_addl_description;
-    @FXML
-    public AnchorPane sectionToScroll;
 
     public void initialize() {
-        bar.valueProperty().addListener(new ChangeListener<Number>() {
+        scroll.valueProperty().addListener(new ChangeListener<Number>() {
             @Override
             public void changed(ObservableValue<? extends Number> value, Number oldValue, Number newValue) {
-                //welcomeText.setLayoutY(newValue.doubleValue());
-
-
-
-                // Invert the value property so when you scroll down the content moves up:
-                //bar.valueProperty().setValue((Integer.parseInt(bar.valueProperty().toString()) * -1))
-
-                DoubleProperty barproperty = bar.valueProperty();
-                String currentValueStr = barproperty.toString();
-                int currentValue = Integer.parseInt(currentValueStr);
-                barproperty.setValue(-1 * currentValue);
-
-                sectionToScroll.translateYProperty().bind(barproperty);
+                welcomeText.setLayoutY(newValue.doubleValue());
             }
         });
     }
